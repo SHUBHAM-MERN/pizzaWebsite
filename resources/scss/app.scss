@@ -1,0 +1,65 @@
+@import "./variable";
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.containeer {
+  // background-color: $primary;
+  color: $fifth;
+}
+nav {
+  background-color: $primary;
+}
+.nav_link {
+  background-color: $fifth;
+
+  color: $primary;
+  border-radius: 30px;
+}
+.body {
+  width: 100%;
+  background-color: $fourth;
+  height: 100vh;
+}
+.body_img {
+  height: 80%;
+  object-fit: cover;
+  color: white;
+  display: inline-block;
+}
+.right_body {
+  text-align: center;
+}
+.left_body {
+  font-size: xx-large;
+  color: $primary;
+}
+.btn_body {
+  background-color: $fifth;
+  border-radius: 40px;
+  font-size: large;
+}
+.add {
+  background-color: $primary;
+}
+.signin {
+  background-color: $primary;
+  height: 90vh;
+}
+.cart_itom{
+  border-bottom: 1px solid $tirtiory;
+  padding-bottom: .7em;
+}
+.cart {
+  background: rgb(235, 233, 233);
+}
+.ordersum{
+ background-color: $fourth;
+ color: rgb(85, 83, 83);
+ margin-top: 3em;
+}

@@ -1,0 +1,57 @@
+.containeer {
+  color: #E85845;
+}
+
+nav {
+  background-color: #EAE7DC;
+}
+
+.nav_link {
+  background-color: #E85845;
+  color: #EAE7DC;
+  border-radius: 30px;
+}
+
+.body {
+  width: 100%;
+  background-color: #E98074;
+  height: 100vh;
+}
+
+.body_img {
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: white;
+  display: inline-block;
+}
+
+.right_body {
+  text-align: center;
+}
+
+.left_body {
+  font-size: xx-large;
+  color: #EAE7DC;
+}
+
+.btn_body {
+  background-color: #E85845;
+  border-radius: 40px;
+  font-size: large;
+}
+
+.add {
+  background-color: #EAE7DC;
+}
+
+.signin {
+  background-color: #EAE7DC;
+  height: 90vh;
+}
+
+.cart_itom {
+  border-bottom: 1px solid #8E8D8A;
+  padding-bottom: .7em;
+}
+/*# sourceMappingURL=app.css.map */

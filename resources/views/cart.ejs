@@ -1,0 +1,53 @@
+<section class="cart containeer min-h-screen flex flex-col justify-center">
+  <h1 class="mx-auto font-bold p-4 ordersum mt-3">ORDER SUMERY</h1>
+
+  <div class="cart_itoms flex flex-col  w-4/5 mx-auto">
+    <%cart.itoms.forEach((pizza)=>{%>
+    <div class="w-3/5 cart_itom flex items-center mx-auto mt-4">
+    
+      
+
+           <img
+           src="/img/pizza-images/img/pizza.png"
+           class="w-20 "
+           alt=""
+           srcset=""
+           />
+        
+        
+        <div class="flex-1 ml-2 ">
+          <h1 class="text-sm"><%=pizza.itom.name %></h1>
+          <span class="text-xs ">SMALL</span>
+        </div>
+    
+
+      <div class=" flex-1">
+          <span class="pizza_update">
+
+              <%=pizza.count %>  
+          </span>
+          <span>
+              Qty
+          </span>
+        </div>
+
+        &#8377;<span class="font-bold pizz_prize"> <%=pizza.itom.price * pizza.count %></span>
+
+      <div class="ml-3">
+        <button data-pizza="<%= JSON.stringify(pizza) %>" class="add_pizza">
+          <i class="fa fa-plus pr-3"></i>
+        </button>
+        <button data-pizza="<%= JSON.stringify(pizza) %>" class="remove_pizza">
+          <i class="fas fa-minus"></i>
+        </button>
+      </div>
+    </div>
+    <% }) %>
+    <div class="">
+        <div class=" w-3/5 text-right mx-auto pb-14 pt-3 ">
+
+            <span class="mr-3">Total :</span>&#8377; <span class="cart_total_price text-xl "><%=cart.totalPrice%></span>
+        </div>
+    </div>
+  </div>
+</section>

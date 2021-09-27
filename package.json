@@ -1,0 +1,33 @@
+{
+  "name": "pizza-realtime",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "laravel-mix": "^6.0.31",
+    "mongoose": "^6.0.7",
+    "noty": "3.2.0-beta"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "nodemon": "^2.0.12",
+    "postcss": "^8.3.6",
+    "resolve-url-loader": "4.0.0",
+    "sass": "^1.41.1",
+    "sass-loader": "12.1.0",
+    "tailwindcss": "^2.2.15"
+  }
+}
