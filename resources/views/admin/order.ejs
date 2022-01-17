@@ -1,0 +1,42 @@
+<section>
+    <div>
+        <div class="fortable w-full flex items-center justify-center">
+            <table class="admin_table w-11/12 table-auto align-middle">
+                <thead>
+                    <tr class="text-left">
+                        <th class="pl-2">Order</th>
+                        <th class="pl-2" >Phone</th>
+                        <th class="pl-2">Address</th>
+                        <th class="pl-2">Status</th>
+                        <th class="pl-2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                 
+
+                    <%data.map((order)=>{%>
+                        <tr>
+                            <input type="hidden" class="hidden" value="<%=order.status%>">
+                            <td class="border px-2 py-2 text-left"><span class="admin_order_id"> <%=order._id%></span>
+                            <%order.items.itoms.map((itom)=>{%>
+                                <p><%=itom.itom.name%></p>
+                                <%})%></td>
+                                <td class="border px-2 py-2 text-left"><%=order.phone%></td>
+                                <td class="border px-2 py-2 text-left"><%=order.address%></td>
+                            <td class="border px-2 py-2 text-left"> 
+                                <select name="select"   data-value='<%=JSON.stringify(order)%>' class="Chnage_status" >
+                                <option value="orderPlaced"  >Order Placed</option>
+                                <option value="preparing" >Preparing</option>
+                                <option value="OnTheWay" >On The Way</option>
+                                <option value="arrieved" >Arrieved</option>
+                                <option value="delevered" >Completed</option>
+                            </select></td>
+                        </tr>
+                  <%  })%>
+                </tbody>
+            </table>
+          
+        </div>
+    </div>
+</section>

@@ -1,0 +1,58 @@
+
+<section>
+
+    <!-- <div>
+        
+        <div class="w-4/5 mx-auto p-2 mt-5 border-blue-100 text-center">
+     
+        <div class="flex  ">
+            <div class="flex-1 p-2 bg-gray-500">
+              <a href="/" class="">   <%=order._id %></a>
+                
+            </div>
+            <div class="flex-1">
+                <%= order.address%>
+                
+            </div>
+            <div class="flex-1">
+                <%=order.createdAt %>
+                
+            </div>
+        </div>
+     
+    </div>
+</div> -->
+
+
+<div class="place_order h-screen   m-4">
+      <h1 class="text-xl pb-3">All Orders</h1>
+      <%if(messages.success){%>
+          <div id="success_msg"><%= messages.success%></div>
+          <%}%>
+
+ 
+  <table class=" w-full table-auto  ">
+      <thead >
+          <tr >
+              <th class="px-3 py-2 text-left">ID</th>
+              <th class="px-3 py-2 text-left">Phone</th>
+              <th class="px-3 py-2 text-left">Address</th>
+              <th class="px-3 py-2 text-left">Time</th>
+          </tr>
+      </thead>
+      <tbody>
+          <%order.forEach((order)=>{%>
+
+              <tr>
+                  <td class="border px-2 py-2 text-left"> <a href="/" class="link"> <%= order._id%></a></td>
+                  <td class="border px-2 py-2 text-left"> <a href="/" class=""> <%= order.phone%></a></td>
+                  <td class="border px-1 py-2"><%= order.address%></td>
+                  <td class="border px-1 py-2 text-left"><%=moment(order.createdAt).format('hh:mm A')%></td>
+                </tr>
+           <% })%>
+      </tbody>
+  </table>
+  </div>
+ 
+
+</section>

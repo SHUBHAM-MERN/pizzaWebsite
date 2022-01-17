@@ -63,3 +63,21 @@ nav {
  color: rgb(85, 83, 83);
  margin-top: 3em;
 }
+
+.link{
+  color: $fifth;
+}
+#success_msg{
+  background-color: rgb(6, 160, 6);
+  width: 100%;
+  font-family: sans-serif;
+  padding-left: 1em
+}
+
+.admin_table{
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.admin_order_id{
+  color: $fifth;
+}

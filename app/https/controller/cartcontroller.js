@@ -5,6 +5,7 @@ function cartcontroller() {
        
         index(req, res) {
             
+            
             res.render("cart",{cart:req.session.cart})
         },
         update(req, res){
@@ -58,8 +59,8 @@ function cartcontroller() {
             })
             res.json({cart:req.session.cart});
         },
-        
         remove(req, res) {
+            var flag = 0;
             const data = req.body;
            
             if (data.count == 1) {
@@ -68,7 +69,7 @@ function cartcontroller() {
                })
                req.session.cart.totalqty--;
                req.session.cart.totalPrice -= data.itom.price;
-               
+                flag = 1;
             }
             else {
                 
@@ -82,7 +83,7 @@ function cartcontroller() {
                     }
                 })
             }
-            res.json({ cart: req.session.cart });
+            res.json({ cart: req.session.cart, flag: flag });
         
         }
 

@@ -351,3 +351,23 @@ nav {
   color: #555353;
   margin-top: 3em;
 }
+
+.link {
+  color: #E85845;
+}
+
+#success_msg {
+  background-color: #06a006;
+  width: 100%;
+  font-family: sans-serif;
+  padding-left: 1em;
+}
+
+.admin_table {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.admin_order_id {
+  color: #E85845;
+}
